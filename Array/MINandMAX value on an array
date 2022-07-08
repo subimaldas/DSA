@@ -9,6 +9,9 @@ Approach:
 2.Use a for loop and compare it with other elements of the array
 3.If any element is greater than the max value(less than the min value), update maximum/min value with the element’s value
 4.Print the maximum/min variable.
+
+Time Complexity: O(N)
+Space Complexity: O(1)
     
     
 CODE:
