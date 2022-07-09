@@ -1,4 +1,8 @@
-// swap alternate number
+Question: swap alternate number
+
+
+CODE:
+
 #include <iostream>
 
 using namespace std;
