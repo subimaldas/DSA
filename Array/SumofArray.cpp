@@ -1,5 +1,9 @@
 Approach : 1 Using Loop
 
+Time Complexity: O(n).
+Space Complexity: O(1).
+   
+ CODE:
 #include <iostream>
 
 using namespace std;
@@ -22,6 +26,11 @@ int main()
 
 Approach : 2 Using predefined function
 
+Time Complexity: O(n).
+Space Complexity: O(1).
+
+    
+CODE:    
 #include <iostream>
 #include <bits/stdc++.h>
 
