@@ -1,3 +1,21 @@
+Question: Find Duplicate from the array.
+    
+    
+Approach 1: Simple sort the array and compare arr[i]==arr[i+1]
+
+Approach 2: Using LinkedList cycle method (tortoise Method).
+    a.Take two variable slow and fast move slow=1; fasr=2 
+    b. When slow=fast stop , then move stop at 1st pos and move both by 1 to get the duplicate number.
+    
+
+Time complexity: O(N). 
+Space complexity: O(1).
+    
+    
+
+
+
+CODE:
 #include <iostream>
 #include <bits/stdc++.h>
 
