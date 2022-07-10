@@ -14,16 +14,24 @@ int binarySearch(int arr[], int size, int key)
         {
             return mid;
         }
-       if (arr[mid] > key) //for going into left part  
+        
+        //For going into left part
+       if (arr[mid] > key)   
         {
             end = mid - 1;
         }
         else
         {
+            
+        //For going into right part
             start = mid + 1;
         }
+        
+        //Update Mid 
         mid = start + (end - start) / 2;
     }
+    
+    //If the element is not present
     return -1;
 }
 int main()
