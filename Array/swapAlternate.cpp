@@ -1,6 +1,9 @@
 Question: swap alternate number
 
 
+Time Complexity: O(N)
+Space Complexity:O(1)
+
 CODE:
 
 #include <iostream>
