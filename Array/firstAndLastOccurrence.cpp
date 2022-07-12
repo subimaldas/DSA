@@ -1,3 +1,14 @@
+Question: 1st and last occurance of a sorted array
+Approach: Binary search lagao BC
+1. if mid== Key , the store the value in a varable and move  to left , because we r searching for the 1st element.
+ 
+    Time Complexity : O(log n) 
+    Auxiliary Space : O(1) 
+        
+        
+        
+CODE:
+    
 #include <iostream>
 
 using namespace std;
@@ -12,14 +23,17 @@ int firstOcc(int arr[], int n, int key)
         if (arr[mid] == key)
         {
             ans = mid;
+            //To get the 1st occurance
             end = mid - 1;
         }
         else if (key > arr[mid])
         {
+            //Move to the right part
             start = mid + 1;
         }
         else
         {
+             //Move to the right part
             end = mid - 1;
         }
         mid = start + (end - start) / 2;
@@ -38,14 +52,17 @@ int lastOcc(int arr[], int n, int key)
         if (arr[mid] == key)
         {
             ans = mid;
+             //To get the Last occurance
             start = mid + 1;
         }
         else if (key > arr[mid])
         {
+             //Move to the right part
             start = mid + 1;
         }
         else
         {
+             //Move to the right part 
             end = mid - 1;
         }
         mid = start + (end - start) / 2;
