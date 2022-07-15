@@ -1,3 +1,10 @@
+Question: Find Pivot element in an Array
+
+Time Complexity: o(log n)
+    
+    Approach: the pivot element is in 2nd line ,i.e the min value ;
+
+CODE:
 #include <iostream>
 
 int getPivot(int arr[], int n)
