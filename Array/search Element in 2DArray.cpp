@@ -12,11 +12,11 @@ bool isPresent(int arr[][4], int target, int row, int col) // here in case of 2d
         {
             if (arr[row][col] == target)
             {
-                return true;
+                return 1;
             }
         }
     }
-    return false;
+    return 0;
 }
 
 int main()
