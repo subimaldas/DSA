@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
- void reverse (string & str, int i, int j)
+ void reverse (string& str, int i, int j)
 {
     //see how it works
-    // cout << "call recieved for " << str << endl;
+    // cout << "call received for " << str << endl;
     
     //base case
     if (i > j)
