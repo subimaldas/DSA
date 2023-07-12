@@ -1,3 +1,5 @@
+Approach 1: using two pointers recursion
+
 #include<iostream>
 using namespace std;
 
@@ -30,5 +32,34 @@ int main() {
     }
 
 
+    return 0;
+}
+
+
+
+Approach 2: Using One pointer approach in recursion
+
+#include<iostream>
+using namespace std;
+
+bool checkPalindrome(string str, int len) {
+    static int i = 0;
+    if(i>=len/2) {
+        return true;
+    }
+ 
+    if(str[i]!=str[len-i-1]) {
+        return false;  
+    
+  }
+      i++;
+   
+    return checkPalindrome(str,len);
+}
+
+int main() {
+    string name = "acbbca";
+    bool result = checkPalindrome(name,name.length());
+    cout<<result<<endl;
     return 0;
 }
