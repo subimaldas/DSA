@@ -1,3 +1,7 @@
+Approach: In each iteration the largest element will cum into the {RIGHT PLACE}
+
+
+
 #include<iostream>
 using namespace std;
 
