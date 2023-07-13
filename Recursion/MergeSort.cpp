@@ -10,13 +10,13 @@ void merge(int *arr, int s , int e){
    int mid= s+(e-s)/2;   //This line can be removed by adding mid on the merge function
    
    int subArray1= mid-s+1;
-   int subrray2= e-mid;
+   int subArray2= e-mid;
    
    
    
    //creating temporary array 
    int *firstArray=new int[subArray1];
-   int *secondArray= new int[subrray2];
+   int *secondArray= new int[subArray2];
    
    
    //copy values to the temp array from the sub-arrays 1 &2
@@ -26,7 +26,7 @@ void merge(int *arr, int s , int e){
    }
    
     mainArrayIndex= mid+1;
-   for(int i=0;i<subrray2;i++){
+   for(int i=0;i<subArray2;i++){
        secondArray[i]= arr[ mainArrayIndex++];
    }
    
@@ -36,7 +36,7 @@ void merge(int *arr, int s , int e){
    int index2=0;
    mainArrayIndex=s;
    
-   while (index1 < subArray1 && index2 < subrray2){
+   while (index1 < subArray1 && index2 < subArray2){
        if(firstArray[index1] < secondArray[index2]){
            arr[mainArrayIndex++]= firstArray[index1++];
        }
@@ -51,7 +51,7 @@ void merge(int *arr, int s , int e){
    }
    
     // Copy the remaining elements of right[], if there are any
-   while (index2<subrray2){
+   while (index2<subArray2){
        arr[mainArrayIndex++]= secondArray[index2++];
    }
     
